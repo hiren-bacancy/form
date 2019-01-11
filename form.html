@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang=>
+    <head>
+        <meta name="keywords" content="Sign Up Form , Form" />
+        <meta name="description" content="Sign Up Form" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sign Up</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            .container{
+                position: relative;
+                border: 2px solid lightblue;
+                width: 100%;
+                background-color:rgb(224, 234, 243);
+            }
+            h3{
+                color: black;
+                padding: 10px;
+            }
+
+            input{
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                padding: 10px;
+                margin: 3%;
+                width: 40%;
+            
+            }
+            input[size="4"]{
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                padding: 10px;
+                margin: 2%;
+                width: 15%;
+            
+            }
+            label.lb1{
+                margin-left: 2.8%;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            button.btn{
+                border: 1px solid #ccc;
+                background-color: lightblue;
+                border-radius: 10px;
+                padding: 10px;
+                margin: 2em;
+            }
+            button:hover{
+                background-color:aqua; 
+            }
+
+            @media (max-width: 335px) {
+                    
+                .container{
+                    background-color: lightgreen;
+                    border: 2px solid lightcoral;
+                    width: auto;
+                }
+                input{
+                    margin-left: 5%;
+                    width: auto;
+                    padding : 10px;
+                }
+                input[size="4"]{
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    padding: 10px;
+                    margin: 2%;
+                    width: 49%;
+                }
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h3>Sign Up</h3>
+            <form>
+                <input type="text" name="user name" placeholder="User Name">
+                <input type="password" name="password" placeholder="Password">
+                <input type="email" name="email" placeholder="Email">
+                <input type="email" name="cemail" placeholder="confirm Email">
+                <input type="text" name="address" placeholder="Address">
+                <input type="text" name="zipcode" placeholder="Zipcode">
+                <input type="text" name="pno" placeholder="Phone Number">
+                <input type="text" name="mno" placeholder="Mobile Number">
+                <label class="lb1">Verification</label><input type="text" class="vari" name="verification" maxlength="4" placeholder="OTP" size="4">
+                <button class="btn">SIGN-IN NOW</button>
+            </form>
+        </div>
+    </body>
+</html>
